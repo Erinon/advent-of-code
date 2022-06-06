@@ -1,9 +1,7 @@
-#!/usr/bin/env python3
-
-
 def read_file(path):
     with open(path, "r") as f:
-        return [float(l.strip()) for l in f.readlines()]
+        return [int(l.strip()) for l in f.readlines()]
+
 
 def cnt_increases_window(nums, wsize):
     cnt = 0
@@ -13,6 +11,7 @@ def cnt_increases_window(nums, wsize):
 
     return cnt
 
+
 def main():
     nums = read_file("input.txt")
 
@@ -21,6 +20,7 @@ def main():
 
     print(f"Part 1: {solution_1}\n"
           f"Part 2: {solution_2}")
+
 
 if __name__ == '__main__':
     main()
