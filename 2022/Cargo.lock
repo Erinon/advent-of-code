@@ -18,9 +18,6 @@ version = "1.0.0"
 [[package]]
 name = "d02"
 version = "1.0.0"
-dependencies = [
- "regex",
-]
 
 [[package]]
 name = "d03"
